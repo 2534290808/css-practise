@@ -1,0 +1,8 @@
+/*轮廓：绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用*/
+div {
+    outline-style: solid; /*轮廓样式*/
+    outline-color: black; /*轮廓颜色*/
+    outline-width: 3px; /*轮廓的宽度*/
+
+    outline: 2px solid red; /*设置轮廓的所有属性*/
+}

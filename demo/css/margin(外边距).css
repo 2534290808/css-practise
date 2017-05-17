@@ -1,0 +1,9 @@
+/*margin：定义元素周围的空间，margin没有背景颜色，是完全透明的*/
+div{
+    margin-top: 2px;/*定义上外边距*/
+    margin-right:2px;/*定义右外边距*/
+    margin-bottom: 2px;/*定义下外边距*/
+    margin-left:2px;/*定义左外边距*/
+
+    margin:1px 2px 4px 5px ;/*简写 定义四周的外边距*/
+}

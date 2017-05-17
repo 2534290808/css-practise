@@ -1,0 +1,8 @@
+.tb1{
+    border: 1px solid black;/*给表格设置边框*/
+    width: 400px;
+    border-collapse: separate;/*表格的边框是否被折叠成一个单一的边框或隔开 属性为collapse便是单一边框*/
+}
+.tb1 td,.tb1 th{/*给表格td和th元素设置边框*/
+    border: 1px solid red;
+}

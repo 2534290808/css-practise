@@ -1,0 +1,27 @@
+/* 未访问链接*/
+a:link {
+    color: #000000;
+}
+
+/* 已访问链接 */
+a:visited {
+    color: #00FF00;
+}
+
+/* 鼠标移动到链接上 */
+a:hover {
+    color: #FF00FF;
+}
+
+/* 鼠标点击时 */
+a:active {
+    color: #0000FF;
+}
+
+/*当设置为若干链路状态的样式，也有一些顺序规则：
+a:hover 必须跟在 a:link 和 a:visited后面
+a:active 必须跟在 a:hover后面*/
+/*text-decoration 属性主要用于删除链接中的下划线：*/
+a:hover {
+    text-decoration: none;
+}

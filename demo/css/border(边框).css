@@ -1,0 +1,23 @@
+div {
+    border-style: solid; /*边框的样式*/
+    border-width: 1px; /*边框的宽度*/
+    border-color: red; /*边框的颜色*/
+}
+
+/*单独设置各边*/
+div {
+    border-top-style: solid; /*上边框的样式*/
+    border-top-width: 2px; /*上边框的宽度*/
+    border-top-color: black; /*上边框的颜色*/
+
+    border-right-style: solid; /*y右边框的样式*/
+
+    border-bottom-style: solid; /*下边框的样式*/
+
+    border-left-style: solid; /*左边框的样式*/
+
+    /*简写*/
+    border:1px solid red;/*四个边框共同简写 依次是 width、style、color*/
+    border-style: solid solid solid solid;/*对四个边框的样式进行简写 一次是上、右、下、左，还有border-color和border-width*/
+    border-top:1px solid white;/*对单个边框进行简写，还有border-right、border-bottom、border-left*/
+}

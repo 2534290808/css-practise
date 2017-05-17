@@ -1,0 +1,7 @@
+div {
+    font-family: Arial; /*设置字体类型*/
+    font-size: 2px; /*设置字体大小*/
+    font-style: normal;/*设置字体样式italic：斜体样式；oblique：斜体样式*/
+    font-variant:small-caps;/*设置以小型大写字母的字体展示,normal:正常*/
+    font-weight:bold;/*设置文本的粗细*/
+}

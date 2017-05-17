@@ -1,0 +1,9 @@
+/*定义元素边框与元素内容之间的空间*/
+div{
+    padding-top: 1px;/*定义上内边距*/
+    padding-right: 1px;/*定义右内边距*/
+    padding-bottom:1px;/*定义下内边距*/
+    padding-left:1px;/*定义左内边距*/
+
+    padding:1px 1px 1px 1px;/*内边距属性定义简写*/
+}

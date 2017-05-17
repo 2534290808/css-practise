@@ -1,0 +1,5 @@
+ul{
+    list-style-image: url("../../img/1.png");/*将图片设为列表项标志*/
+    list-style-position: inside;/*设置列表中列表项标志的位置 outside为在列表向外面*/
+    list-style-type: circle;/*设置列表项的类型，属性过多不列举*/
+}
