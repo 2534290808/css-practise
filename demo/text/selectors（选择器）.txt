@@ -1,0 +1,58 @@
+1、*选择器：选择所有的元素，匹配文档中的每一个元素，包括<html>和<body> 可用于为另一个元素内的所有元素添加样式 如div *
+2、.class选择器：为所有具有指定类的元素添加样式，p.nav{}:选择类名为nav的所有的p标签
+3、#id选择器：指定具有id的元素的样式
+4、element选择器：将样式添加到具有指定元素名称的所有元素
+
+关系选择器
+5、selector1,selector2，selector3，····：或关系，同时选取多个元素（即只要满足其中一个条件即可）
+6、selector1 selector2：后代关系，选取selector1下的selector2
+7、selector1>selector2：父子关系，选取selector1下子元素中的匹配元素，不能选择到孙元素
+8、selector1+selector：相邻兄弟关系：选择紧跟在selector1后的匹配selector2的元素
+9、selector1~selector2 一般兄弟关系：选择所有的在selector1后的匹配selector2的元素
+10、elementselector：与关系 如p.nav选中的是既是p标签又有nav类的元素，注意：第一位必须是元素选择器 第二位是非元素选择器
+
+属性选择器
+11、[attr]:选择有attr属性的元素 如：class
+12、[attr='value']:选择有attr属性且属性值为value的元素 class=‘value’
+13、[attr~='value']:选择有attr属性且属性值有value的元素，又称部分属性选择器 如：class=‘value val’
+14、[attr|='value']:选择具有attr属性且属性值以val开头并用连接符"-"分隔的字符串元素，如果属性值仅为val，也将被选择 如：class='value-text'
+15、[attr^='value']:选择具有attr属性且属性值为以val开头元素 如：class="valuetext"
+16、[attr$='value']:选择具有attr属性且属性值为以value结尾的元素 如：class='textvalue'
+17、[attr*='value']:选择具有attr属性且属性值为包含value的元素 如：class='inputvaluetext'
+
+伪类选择器
+18、:link  ：设置超链接a在未被访问前的样式
+    超链接四种状态：a:link {} a:visited {} a:hover {} a:active {} 注意：，a:hover 必须位于 a:link 和 a:visited 之后，a:active 必须位于 a:hover 之后
+19、:visited  :设置超链接a在其链接地址已被访问过时的样式
+20、:hover :  设置元素在其鼠标悬停时的样式(如：按钮状态)
+21、:active  :设置元素在被用户激活（在鼠标点击与释放之间发生的事件）时的样式(如：按钮被按下设置样式)
+22、:focus  :设置对象在成为输入焦点（该对象的onfocus事件发生）时的样式（如：input）
+23、:lang('la') :匹配使用特殊语言元素
+24、:not(s) :匹配不含有s选择符的元素
+25、E:root  :匹配E元素在文档的根元素。在HTML中，根元素永远是HTML
+26、E:fist-child  :匹配E的父元素的第一个子元素,如果该元素是E元素则有效，否则无效
+27、E:last-child  :匹配E的父元素的最后一个子元素，如果该元素是E元素则有效，否则无效
+28、E:only-child  :匹配E的父元素的唯一一个子元素，如果该元素是E元素则有效，否则无效，换言之，父元素中只有一个子元素，那就是E
+29、E:nth-child(n) :匹配E的父元素的第n个子元素，假设该子元素不是E，则选择符无效，
+     该选择符允许使用一个乘法因子(n)来作为换算方式，比如我们想选中所有的偶数子元素E，那么选择符可以写成：E:nth-child(2n)
+     使用odd, even实现奇偶，:nth-child(even)偶数  :nth-child(odd)奇数
+30、E:nth-last-child(n) :匹配E的父元素的倒数第n个子元素，假设该子元素不是E，则选择符无效
+31、E:first-of-type :匹配E的父元素的第一个子E元素；该选择符总是能命中父元素的第1个为E的子元素，不论第1个子元素是否为E
+32、E:last-of-type : 匹配E的父元素的最后一个子E元素；该选择符总是能命中父元素的倒数第1个为E的子元素，不论倒数第1个子元素是否为E
+33、E:only-of-type :匹配E的父元素的唯一一个子E元素；该选择符总是能命中父元素的唯一同类型子元素E，不论该元素的位置
+33、E:nth-of-type(n) :匹配E的父元素的第n个子E元素;该选择符总是能命中父元素的第n个为E的子元素，不论第n个子元素是否为E
+34、E:nth-last-of-type(n) :匹配E的父元素的倒数第n个子E元素；该选择符总是能命中父元素的倒数第n个为E的子元素，不论倒数第n个子元素是否为E
+35、E:empty :匹配没有任何子元素（包括text节点）的元素E
+36、E:checked  :匹配用户界面上处于选中状态的元素E。(用于input type为radio与checkbox时)
+37、E:enabled :匹配用户界面上处于可用状态的元素E
+38、E:disabled :匹配用户界面上处于禁用状态的元素E
+39、E:target  ：匹配相关URL指向的E元素，
+解释：URL后面跟锚点#，指向文档内某个具体的元素。这个被链接的元素就是目标元素(target element)，:
+
+40、E:first-letter /E::first-letter :设置对象内的第一个字符的样式,
+    此伪对象仅作用于块对象。内联对象要使用该伪对象，必须先将其设置为块级对象,该伪类常被用来配合font-size属性和float属性制作首字下沉效果
+41、E:first-line/E::first-line :设置对象内的第一行的样式
+    此伪对象仅作用于块对象。内联对象要使用该伪对象，必须先将其设置为块级对象
+42、E:before/E::before 选定的元素前插入内容。使用content 属性来指定要插入的内容
+43、E:after/E::after 选定的元素后插入内容。使用content 属性来指定要插入的内容
+44、E::selection :设置对象被选择时的样式,，::selection只能定义被选择时的background-color，color及text-shadow

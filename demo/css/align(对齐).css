@@ -1,0 +1,13 @@
+/*块级元素如何水平对齐？*/
+
+/*中心对齐,使用margin属性
+块元素可以把左，右页边距设置为"自动"对齐。*/
+div{
+    margin-right:auto ;
+    margin-left: auto;
+}
+
+/*使用float属性设置左，右对齐*/
+div{
+    float: left;
+}

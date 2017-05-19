@@ -1,0 +1,4 @@
+div{
+    float: left;/*指定一个盒子（元素）是否可以浮动 left:左浮动；right：右浮动；none：不浮动*/
+    clear: both;/*指定不允许元素周围有浮动元素 left:不允许左边，right：不允许右边 ，both：不允许左右两边 none:允许*/
+}

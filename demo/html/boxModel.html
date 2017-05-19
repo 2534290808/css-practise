@@ -21,5 +21,13 @@
        <div class="content" style="width: 100%;height: 100%;">盒子模型</div>
     </div>
 </div>
+<p>进一步得到盒子的模型如下:</p>
+<img src="../../img/boxModel.png">
+<p>从上图可以分析得出：其中border其实是由四个梯形拼接而成，与我们现实中的相框的拼接完全一样</p>
+<p>由此我们可以设计出四个方向不同的三角形,我们只需将一个边框设为有颜色，其他三边设置为透明，指定其高度或宽度（css中给元素指定高宽是给content指定）为零即可；设置如下:</p>
+<p style="border-style: solid;border-color: black transparent transparent transparent;width: 0;"></p>
+<p style="border-style: solid;border-color: transparent black transparent transparent;height:0px;"></p>
+<p style="border-style: solid;border-color: transparent transparent black  transparent;width: 0px;"></p>
+<p style="border-style: solid;border-color: transparent transparent transparent black ;height: 0px;"></p>
 </body>
 </html>

@@ -1,0 +1,9 @@
+div{
+    height: 1px;/*元素的高度（内容）*/
+    width:1px;/*元素的宽度（内容）*/
+    line-height: 1px;/*设置行高，如要使元素垂直方向居于父元素中间，则可设height的值和line-height的值相等*/
+    max-height: 1px;
+    min-height: 1px;
+    max-width: 1px;
+    min-width: 1px;
+}

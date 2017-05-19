@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .tooltip{
+        position: relative;/*相对定位*/
+        display: inline-block;/*内联块元素*/
+        border: 1px solid black;
+        padding: 5px 0;
+        margin: 30px;
+    }
+  .tooltip .tooltiptext{
+      visibility: hidden;/*隐藏*/
+      width: 120px;
+      background-color: black;
+      color: #ffffff;
+      padding:5px 0;
+      text-align: center;
+      border-radius: 6px;
+      border: 1px solid red;
+      position: absolute;/*定位绝对*/
+      z-index: 1;
+  }
+    .tooltip:hover .tooltiptext{
+        visibility: visible;
+    }
+
+</style>
+<body>
+<div class="tooltip">
+    点击我
+    <p class="tooltiptext" style="">基础提示框</p>
+</div>
+<br>
+<div class="tooltip">
+    在右侧
+    <p class="tooltiptext" style="margin: 0px;top:0px;left: 105%;">在右侧</p><!--由于top是指定元素的上外边距与包含块的上边框内侧的偏移量，而p标签有margin，所以应该先将margin设为0-->
+</div>
+<div class="tooltip">
+    在左侧
+    <p class="tooltiptext" style="margin: 0px;top:0px;right:105%;">在左侧</p>
+</div>
+<div class="tooltip">
+    在下侧
+    <p class="tooltiptext" style="margin: 0px;top:100%;">在下侧</p>
+</div>
+<div class="tooltip">
+    在上侧
+    <p class="tooltiptext" style="margin: 0px;bottom:100%;">在上侧</p>
+</div>
+</body>
+</html>

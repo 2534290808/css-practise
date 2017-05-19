@@ -17,7 +17,23 @@ div {
     border-left-style: solid; /*左边框的样式*/
 
     /*简写*/
-    border:1px solid red;/*四个边框共同简写 依次是 width、style、color*/
-    border-style: solid solid solid solid;/*对四个边框的样式进行简写 一次是上、右、下、左，还有border-color和border-width*/
-    border-top:1px solid white;/*对单个边框进行简写，还有border-right、border-bottom、border-left*/
+    border: 1px solid red; /*四个边框共同简写 依次是 width、style、color*/
+    border-style: solid solid solid solid; /*对四个边框的样式进行简写 一次是上、右、下、左，还有border-color和border-width*/
+    border-top: 1px solid white; /*对单个边框进行简写，还有border-right、border-bottom、border-left*/
+
+    border-radius: 2px; /*可以给边框添加圆角css3*/
+    border-top-left-radius: 1px; /*给左上角添加圆角*/
+    border-top-right-radius: 1px; /*给右上角添加圆角*/
+    border-bottom-right-radius: 1px; /*给右下角添加圆角*/
+    border-bottom-left-radius: 1px; /*给左下角添加圆角*/
+
+    /*box-shadow:x-shadow y-shadow blur spread color inset
+    x-shadow:水平阴影距离，可为负数，描述距离左边框外侧的距离，向右为正
+    y-shadow：垂直阴影距离，可为负数，描述距离上边框外侧的距离，向下为正
+    blur：阴影模糊的距离，不能为负
+    spread：阴影的外延值，可为负值
+    color：描述阴影的颜色
+    inset：对象的阴影类型为内阴影，为空表示外阴影
+    */
+    box-shadow: 1px 2px 3px 4px red inset;
 }
